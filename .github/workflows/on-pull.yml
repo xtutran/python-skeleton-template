@@ -32,7 +32,7 @@ jobs:
       - name: 'Build and run pytest'
         uses: docker/build-push-action@v5
         with:
-          context: .false
+          context: .
           push: false
           target: test
           tags: ${{ env.IMAGE_NAME }}:test
