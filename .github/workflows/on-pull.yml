@@ -25,8 +25,8 @@ jobs:
         uses: chartboost/ruff-action@v1
         id: ruff-check
         with:
-          version: 0.2.2
-          src: './src'
+          version: 0.4.3
+          src: './app'
           args: 'check --fix'
 
       - name: 'Build and run pytest'
