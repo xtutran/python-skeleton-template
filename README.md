@@ -9,8 +9,8 @@
   - pre-commit `4.6.0`
   - ruff `0.4.3`
   - direnv `2.32.2` [`optional`]
-  
-  
+
+
   ```shell
   brew install pre-commit ruff
   ```
@@ -19,12 +19,12 @@
   ```shell
   make install
   ```
-  
+
 - Config `pre-commit` - one time setup
   ```shell
   pre-commit install
   ```
-  
+
   ```shell
   pre-commit run --all-files
   ```

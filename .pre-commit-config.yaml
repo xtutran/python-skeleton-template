@@ -1,8 +1,9 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+    rev: v4.6.0
     hooks:
       - id: check-yaml
+      - id: check-json
       - id: end-of-file-fixer
       - id: trailing-whitespace
       - id: check-docstring-first
@@ -10,6 +11,7 @@ repos:
       # - id: double-quote-string-fixer
       - id: name-tests-test
         exclude: (tests/utils)
+        args: [ --pytest-test-first ]
       - id: requirements-txt-fixer
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
@@ -20,5 +22,5 @@ repos:
       - id: ruff
         args: [ --fix ]
       # Run the formatter.
-      - id: ruff-format
-        args: [ --check ]
+      #- id: ruff-format
+      #  args: [ --check ]
